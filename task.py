@@ -1,8 +1,7 @@
 from art import tprint
-
-tprint("PYTHON")
-
 from class1 import Hi
 
+a = Hi('Erzhan')
+tprint(str(a))
 
 

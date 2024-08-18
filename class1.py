@@ -1,15 +1,17 @@
 class Hello:
-    def __init__(self, str):
-        self.str = str
-
-class Hi(Hello):
-    def __init__(self, name, age):
+    def __init__(self, name):
         self.name = name
-        self.age = age
 
     def __str__(self):
-        return (f'name: {self.name}\n'
-                f' age: {self.age}')
+        return  self.name
 
-person = Hi('Erzhan',  17)
+
+class Hi(Hello):
+    def __init__(self, name):
+        super().__init__(name)
+
+
+
+
+person = Hi('Erzhan')
 print(person)

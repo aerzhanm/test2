@@ -9,6 +9,7 @@ class Hello:
 
 
 class Hi(Hello):
+<<<<<<< HEAD
     def __init__(self, name, age):
         super().__init__(name, age)
 
@@ -16,4 +17,11 @@ class Hi(Hello):
 
 
 person = Hi('Erzhan', 17)
+=======
+    def __init__(self,name, age):
+        super().__init__(name,age)
+
+
+person = Hi('Erzhan',  17)
+>>>>>>> ftest2
 print(person)
